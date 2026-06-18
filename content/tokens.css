@@ -1,0 +1,17 @@
+@theme {
+  /* Cores "O Eixo" */
+  --color-navy: #15263f;
+  --color-navy-deep: #0e1b2e;
+  --color-gold: #c2a05b;
+  --color-gold-soft: #d4bc84;
+  --color-ivory: #f6f2e9;
+  --color-bone: #ece6d8;
+  --color-slate: #5e6e7e;
+  --color-ink: #1a2230;
+  --color-surface: #fbf9f3;
+  --color-line: rgba(21, 38, 63, 0.12);
+
+  /* Tipografia — variáveis CSS preenchidas pelo next/font em T5 */
+  --font-serif: var(--font-newsreader), Georgia, serif;
+  --font-sans: var(--font-instrument-sans), system-ui, sans-serif;
+}
