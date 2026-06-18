@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { MobileNav } from "@/components/ui/MobileNav";
 
 const navLinks = [
   { href: "/sobre", label: "Sobre" },
@@ -38,24 +39,7 @@ export default function Header() {
           Agendar consulta
         </Link>
 
-        {/* Mobile menu button — Radix Dialog adicionado em T7 */}
-        <button className="text-ivory md:hidden" aria-label="Abrir menu">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M4 6h16M4 12h16M4 18h16"
-            />
-          </svg>
-        </button>
+        <MobileNav />
       </div>
     </header>
   );
