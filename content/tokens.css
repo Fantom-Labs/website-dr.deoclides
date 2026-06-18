@@ -10,8 +10,10 @@
   --color-ink: #1a2230;
   --color-surface: #fbf9f3;
   --color-line: rgba(21, 38, 63, 0.12);
+}
 
-  /* Tipografia — variáveis CSS preenchidas pelo next/font em T5 */
-  --font-serif: var(--font-newsreader), Georgia, serif;
-  --font-sans: var(--font-instrument-sans), system-ui, sans-serif;
+@theme inline {
+  /* Tipografia — variáveis CSS injetadas pelo next/font no root layout */
+  --font-serif: var(--font-newsreader);
+  --font-sans: var(--font-instrument-sans);
 }
