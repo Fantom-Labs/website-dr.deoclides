@@ -95,6 +95,7 @@ Arquivo de referência: `conceito-visual-dr-deoclides.html`
 | CMS             | Sanity + next-sanity + @sanity/image-url (Studio em `/studio`)    |
 | Queries CMS     | GROQ + cache explícito (`cacheTag` / `revalidateTag` via webhook) |
 | Componentes     | Custom (design system "O Eixo") + Radix pontual                   |
+| Utilitários     | clsx (helper `cn` para merge de classes nos primitivos)           |
 | Formulário      | React Hook Form + Zod + @hookform/resolvers                       |
 | Envio de e-mail | Resend + React Email                                              |
 | Imagens         | next/image + pipeline de imagem do Sanity (hotspot)               |
