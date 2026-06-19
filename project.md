@@ -222,6 +222,8 @@ Revalidação: webhook do Sanity → `app/api/revalidate/route.ts` → `revalida
 
 ## 10. SEO e conversão
 
+> Estratégia completa (palavras-chave, meta tags prontas, schema, SEO local, pautas de blog, CFM): ver `seo-dr-deoclides.md`.
+
 - **Metadata API** por página (title, description, OG dinâmico)
 - **Schema.org / JSON-LD:** `Physician`, `MedicalBusiness`, `MedicalProcedure`, e `FAQPage` (ligado às perguntas frequentes do formulário → potencial rich snippet)
 - **sitemap.ts** + **robots.ts**
