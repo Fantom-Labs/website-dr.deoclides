@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 
 const navLinks = [
@@ -38,8 +40,7 @@ export default function Footer() {
 
         <div className="border-line mt-8 border-t pt-6">
           <p className="text-ivory/40 font-sans text-xs">
-            © {new Date().getFullYear()} Dr. Deoclides · Todos os direitos
-            reservados
+            © 2026 Dr. Deoclides · Todos os direitos reservados
           </p>
         </div>
       </div>
