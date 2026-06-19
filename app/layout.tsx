@@ -17,8 +17,22 @@ const instrumentSans = Instrument_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Dr. Deoclides",
-  description: "Dr. Deoclides — Neurocirurgião · Especialista em Coluna",
+  metadataBase: new URL("https://doutordeoclides.com.br"),
+  title: {
+    template: "%s · Dr. Deoclides",
+    default: "Dr. Deoclides — Neurocirurgião Especialista em Coluna | Recife",
+  },
+  description:
+    "Dr. Deoclides, neurocirurgião especialista em coluna vertebral em Recife/PE. 14 anos de experiência, fellowship UCL Londres. CRM PE 17015 · RQE 1548.",
+  openGraph: {
+    type: "website",
+    locale: "pt_BR",
+    siteName: "Dr. Deoclides",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({
