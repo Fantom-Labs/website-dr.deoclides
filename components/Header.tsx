@@ -1,7 +1,10 @@
+import Image from "next/image";
 import Link from "next/link";
+import { CalendarIcon } from "@/components/ui/icons";
 import { MobileNav } from "@/components/ui/MobileNav";
 
 const navLinks = [
+  { href: "/", label: "Início" },
   { href: "/sobre", label: "Sobre" },
   { href: "/especialidades", label: "Especialidades" },
   { href: "/academico", label: "Acadêmico" },
@@ -11,35 +14,41 @@ const navLinks = [
 
 export default function Header() {
   return (
-    <header className="bg-navy">
-      <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-        <Link href="/" className="flex flex-col gap-0.5">
-          <span className="text-ivory font-serif text-xl">Dr. Deoclides</span>
-          <span className="text-gold-soft font-sans text-xs">
-            Neurocirurgião · Especialista em Coluna
-          </span>
-        </Link>
+    <header className="sticky top-0 z-50">
+      <div className="mx-auto flex h-24 max-w-[1400px] items-center px-4 sm:px-6 lg:px-8">
+        <div className="border-line flex w-full items-center justify-between rounded-2xl border bg-white/95 py-3 pr-3 pl-4 shadow-[0_4px_9px_0_rgba(0,0,0,0.08)] backdrop-blur-md sm:pr-4 sm:pl-6">
+          <Link href="/" className="shrink-0">
+            <Image
+              src="/logo.svg"
+              alt="Dr. Deoclides — Neurocirurgião Especialista em Coluna"
+              width={148}
+              height={34}
+              priority
+            />
+          </Link>
 
-        <nav className="hidden items-center gap-6 md:flex">
-          {navLinks.map(({ href, label }) => (
-            <Link
-              key={href}
-              href={href}
-              className="text-ivory/80 hover:text-ivory font-sans text-sm transition-colors"
-            >
-              {label}
-            </Link>
-          ))}
-        </nav>
+          <nav className="hidden items-center gap-8 lg:flex">
+            {navLinks.map(({ href, label }) => (
+              <Link
+                key={href}
+                href={href}
+                className="text-ink hover:text-navy font-sans text-sm font-medium transition-colors"
+              >
+                {label}
+              </Link>
+            ))}
+          </nav>
 
-        <Link
-          href="/contato"
-          className="bg-gold text-navy-deep hover:bg-gold-soft hidden rounded px-4 py-2 font-sans text-sm font-medium transition-colors md:block"
-        >
-          Agendar consulta
-        </Link>
+          <Link
+            href="/contato"
+            className="bg-navy border-gold hover:bg-navy-deep text-ivory hidden items-center gap-2 rounded-xl border px-5 py-3 font-sans text-sm font-medium transition-colors lg:flex"
+          >
+            <CalendarIcon className="size-5" />
+            Agendar Avaliação
+          </Link>
 
-        <MobileNav />
+          <MobileNav />
+        </div>
       </div>
     </header>
   );

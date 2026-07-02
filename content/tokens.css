@@ -16,4 +16,5 @@
   /* Tipografia — variáveis CSS injetadas pelo next/font no root layout */
   --font-serif: var(--font-newsreader);
   --font-sans: var(--font-instrument-sans);
+  --font-poppins: var(--font-poppins-var);
 }

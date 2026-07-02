@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Instrument_Sans, Newsreader } from "next/font/google";
+import { Instrument_Sans, Newsreader, Poppins } from "next/font/google";
 import "./globals.css";
 
 const newsreader = Newsreader({
@@ -14,6 +14,13 @@ const instrumentSans = Instrument_Sans({
   subsets: ["latin"],
   display: "swap",
   variable: "--font-instrument-sans",
+});
+
+const poppins = Poppins({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-poppins-var",
+  weight: ["400"],
 });
 
 export const metadata: Metadata = {
@@ -43,7 +50,7 @@ export default function RootLayout({
   return (
     <html
       lang="pt-BR"
-      className={`${newsreader.variable} ${instrumentSans.variable} h-full antialiased`}
+      className={`${newsreader.variable} ${instrumentSans.variable} ${poppins.variable} h-full antialiased`}
     >
       <body className="flex min-h-full flex-col">{children}</body>
     </html>

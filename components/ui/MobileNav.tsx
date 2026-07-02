@@ -15,7 +15,7 @@ export function MobileNav() {
   return (
     <Dialog.Root>
       <Dialog.Trigger asChild>
-        <button className="text-ivory md:hidden" aria-label="Abrir menu">
+        <button className="text-ink lg:hidden" aria-label="Abrir menu">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
