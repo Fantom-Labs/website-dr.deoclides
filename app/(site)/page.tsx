@@ -1,4 +1,5 @@
 import About from "@/components/sections/About";
+import Approach from "@/components/sections/Approach";
 import Hero from "@/components/sections/Hero";
 import Specialties from "@/components/sections/Specialties";
 
@@ -8,6 +9,7 @@ export default function Home() {
       <Hero />
       <About />
       <Specialties />
+      <Approach />
     </main>
   );
 }
