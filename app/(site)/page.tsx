@@ -3,6 +3,7 @@ import Approach from "@/components/sections/Approach";
 import Faq from "@/components/sections/Faq";
 import Hero from "@/components/sections/Hero";
 import Specialties from "@/components/sections/Specialties";
+import Testimonials from "@/components/sections/Testimonials";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Specialties />
       <Approach />
       <Faq />
+      <Testimonials />
     </main>
   );
 }
