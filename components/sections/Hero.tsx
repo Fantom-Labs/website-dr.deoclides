@@ -45,7 +45,7 @@ export default function Hero() {
               height={24}
               className="size-6"
             />
-            Agende uma avaliação
+            Envie uma mensagem
           </Link>
         </div>
       </div>
