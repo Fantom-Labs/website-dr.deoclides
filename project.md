@@ -91,7 +91,7 @@ Arquivo de referência: `conceito-visual-dr-deoclides.html`
 | Runtime React   | React 19.2                                                        |
 | Linguagem       | TypeScript                                                        |
 | Estilo          | Tailwind CSS v4 (tokens via `@theme`)                             |
-| Fontes          | next/font — Newsreader (display) + Instrument Sans (corpo)        |
+| Fontes          | next/font — Newsreader (display) + Instrument Sans (corpo) + Poppins (títulos de destaque, ex.: H1 da Hero) |
 | CMS             | Sanity + next-sanity + @sanity/image-url (Studio em `/studio`)    |
 | Queries CMS     | GROQ + cache explícito (`cacheTag` / `revalidateTag` via webhook) |
 | Componentes     | Custom (design system "O Eixo") + Radix pontual                   |
@@ -115,6 +115,7 @@ Arquivo de referência: `conceito-visual-dr-deoclides.html`
 - `cacheLife` / `cacheTag` estáveis (sem prefixo `unstable_`).
 - Middleware renomeado para `proxy.ts`. Não usamos middleware pesado — provavelmente nenhum.
 - Node mínimo 20 — garantir no Netlify.
+- `images.qualities` agora é obrigatório para usar `quality` != 75 no `next/image` (senão o valor é descartado silenciosamente e cai de volta pra 75).
 
 ### Radix — apenas onde há a11y/interação
 
@@ -151,6 +152,7 @@ Valores do conceito "O Eixo". Entram no `@theme` do Tailwind v4.
 /* Tipografia */
 --font-serif:  'Newsreader'        /* display, títulos, momentos editoriais/acadêmicos */
 --font-sans:   'Instrument Sans'   /* corpo, UI, sobrancelhas */
+--font-poppins: 'Poppins'          /* títulos de destaque (H1, headlines de seção) */
 ```
 
 **Diretrizes:** Navy carrega a autoridade; Gold entra só nos momentos que importam (CTA, detalhes, a curva da coluna). Fundo quente (nunca `#FFFFFF`) é o que separa o site de uma clínica fria. Serifada itálica em dourado = o gesto humano.
@@ -298,6 +300,7 @@ Consultório 30% · Bloco cirúrgico 30% · Preceptoria/educação (HR) 20% · S
 
 - [ ] **Landing page de Ads:** página dentro do site (`/escoliose`) ou separada sem navegação? Impacta escopo/custo. → alinhar com Arthur
 - [ ] Confirmar números de sala (Esmere e Neuron) e horários de atendimento → Kommu/Dr. Deoclides
+- [ ] Número de WhatsApp para os CTAs do site ("Agende uma avaliação") → Kommu/Dr. Deoclides
 - [ ] Registro e apontamento do domínio → Kommu
 - [ ] IDs de tracking → Kommu
 - [ ] Vetores da marca + manual finalizado → Kommu
