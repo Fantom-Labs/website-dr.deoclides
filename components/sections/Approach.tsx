@@ -19,6 +19,12 @@ const pillars = [
     description:
       "Acompanhamento atento e linguagem clara em cada etapa, para você entender o que está acontecendo e decidir com tranquilidade.",
   },
+  {
+    icon: "/heartbeat.svg",
+    title: "Retorno à qualidade de vida",
+    description:
+      "O objetivo de cada decisão é um só: devolver o seu movimento, a sua autonomia e a liberdade de viver sem dor limitar o que você ama fazer.",
+  },
 ];
 
 export default function Approach() {
