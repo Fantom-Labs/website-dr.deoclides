@@ -15,11 +15,11 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50">
       <div className="mx-auto flex h-24 max-w-[1400px] items-center px-4 sm:px-6 lg:px-8">
-        <div className="border-line flex w-full items-center justify-between rounded-2xl border bg-white/95 py-3 pr-3 pl-4 shadow-[0_4px_9px_0_rgba(0,0,0,0.08)] backdrop-blur-md sm:pr-4 sm:pl-6">
+        <div className="border-line flex w-full items-center justify-between rounded-2xl border bg-white/90 py-3 pr-3 pl-4 shadow-[0_4px_9px_0_rgba(0,0,0,0.08)] backdrop-blur-md sm:pr-4 sm:pl-6">
           <Link href="/" className="shrink-0">
             <Image
               src="/logo.svg"
-              alt="Dr. Deoclides — Neurocirurgião Especialista em Coluna"
+              alt="Dr. Deoclides - Neurocirurgião Especialista em Coluna"
               width={148}
               height={34}
               priority

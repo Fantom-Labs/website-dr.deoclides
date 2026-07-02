@@ -27,12 +27,12 @@ export default function Specialties() {
   return (
     <section className="bg-surface mt-[80px] pb-16 md:pb-24">
       <div className="mx-auto max-w-[1400px] px-4 sm:px-6 lg:px-8">
-        <div className="bg-navy-deep grid grid-cols-1 gap-10 rounded-2xl p-8 sm:p-12 lg:grid-cols-[35fr_65fr] lg:items-center lg:p-16">
+        <div className="bg-navy-deep grid grid-cols-1 gap-10 rounded-2xl p-20 lg:grid-cols-[35fr_65fr] lg:items-start">
           <div>
             <Eyebrow>Especialidades</Eyebrow>
 
             <h2 className="text-ivory font-poppins mt-6 text-3xl leading-tight font-medium sm:text-4xl">
-              Cuidado especializado para os casos mais complexos da coluna
+              Especializado no tratamento dos casos mais complexos da coluna
             </h2>
 
             <p className="text-ivory/70 mt-4 font-sans text-lg leading-relaxed">
