@@ -18,7 +18,7 @@ export function Accordion({
     >
       {items.map((item, i) => (
         <RadixAccordion.Item key={i} value={String(i)}>
-          <RadixAccordion.Trigger className="group text-navy hover:text-gold flex w-full items-center justify-between py-4 text-left font-sans text-base font-medium transition-colors">
+          <RadixAccordion.Trigger className="group text-navy flex w-full items-center justify-between py-4 text-left font-sans text-base font-medium">
             {item.question}
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -27,7 +27,7 @@ export function Accordion({
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
-              className="shrink-0 transition-transform duration-200 group-data-[state=open]:rotate-180"
+              className="group-hover:text-gold shrink-0 transition-[transform,color] duration-200 group-data-[state=open]:rotate-180"
             >
               <path
                 strokeLinecap="round"
