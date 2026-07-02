@@ -4,7 +4,7 @@ import { Eyebrow } from "@/components/ui/Eyebrow";
 
 export default function About() {
   return (
-    <section className="bg-surface py-16 md:py-24">
+    <section className="bg-surface pt-16 md:pt-24">
       <div className="mx-auto grid max-w-[1400px] grid-cols-1 gap-6 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
         <div className="relative aspect-[646/614] overflow-hidden rounded-2xl">
           <Image
@@ -18,10 +18,10 @@ export default function About() {
         </div>
 
         <div className="bg-navy-deep flex flex-col justify-center gap-6 rounded-2xl p-8 sm:p-12">
-          <Eyebrow>Sobre</Eyebrow>
+          <Eyebrow>Minha história</Eyebrow>
 
           <h2 className="text-ivory font-poppins text-3xl leading-tight font-medium sm:text-4xl">
-            Uma carreira inteira dedicada a coluna
+            Uma carreira inteira dedicada a cuidar de colunas
           </h2>
 
           <p className="text-ivory/70 font-sans text-lg leading-relaxed">
