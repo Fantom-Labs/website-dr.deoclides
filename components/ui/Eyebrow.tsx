@@ -8,13 +8,13 @@ export function Eyebrow({
   className?: string;
 }) {
   return (
-    <p
+    <span
       className={cn(
-        "text-gold font-sans text-xs font-semibold tracking-widest uppercase",
+        "border-gold/40 bg-gold/10 text-ivory inline-flex w-fit items-center rounded-full border px-8 py-2.5 font-sans text-lg",
         className,
       )}
     >
       {children}
-    </p>
+    </span>
   );
 }
