@@ -36,7 +36,7 @@ export default function Hero() {
 
           <Link
             href="/contato"
-            className="border-gold/30 text-ivory mt-8 inline-flex items-center gap-3 rounded-xl border bg-[#0076ff]/20 px-6 py-4 font-sans text-base font-medium backdrop-blur-md transition-colors hover:bg-[#0076ff]/30"
+            className="border-gold/30 text-ivory mt-8 inline-flex items-center gap-3 rounded-xl border bg-[#032c58] px-6 py-4 font-sans text-base font-medium backdrop-blur-md transition-colors hover:bg-[#032c58]/90"
           >
             <Image
               src="/zap.svg"

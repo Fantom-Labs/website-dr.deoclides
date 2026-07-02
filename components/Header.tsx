@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import { CalendarIcon } from "@/components/ui/icons";
 import { MobileNav } from "@/components/ui/MobileNav";
 
 const navLinks = [
@@ -41,10 +40,16 @@ export default function Header() {
 
           <Link
             href="/contato"
-            className="bg-navy border-gold hover:bg-navy-deep text-ivory hidden items-center gap-2 rounded-xl border px-5 py-3 font-sans text-sm font-medium transition-colors lg:flex"
+            className="border-gold/30 text-ivory hidden items-center gap-3 rounded-xl border bg-[#032c58] px-6 py-4 font-sans text-base font-medium backdrop-blur-md transition-colors hover:bg-[#032c58]/90 lg:inline-flex"
           >
-            <CalendarIcon className="size-5" />
-            Agendar Avaliação
+            <Image
+              src="/zap.svg"
+              alt=""
+              width={24}
+              height={24}
+              className="size-6"
+            />
+            Agende uma avaliação
           </Link>
 
           <MobileNav />
