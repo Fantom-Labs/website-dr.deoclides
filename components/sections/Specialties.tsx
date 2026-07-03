@@ -41,30 +41,37 @@ export default function Specialties() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-            {specialties.map(({ title, description }) => (
-              <div
-                key={title}
-                className="border-gold/30 flex flex-col items-center rounded-xl border p-6 text-center lg:items-start lg:text-left"
-              >
-                <div className="bg-gold flex size-9 items-center justify-center rounded-md">
-                  <Image
-                    src="/coluna.svg"
-                    alt=""
-                    width={36}
-                    height={36}
-                    className="size-9"
-                  />
-                </div>
+          <div className="relative">
+            <div className="flex snap-x snap-mandatory [scrollbar-width:none] gap-4 overflow-x-auto [-ms-overflow-style:none] sm:grid sm:grid-cols-2 sm:overflow-visible [&::-webkit-scrollbar]:hidden">
+              {specialties.map(({ title, description }) => (
+                <div
+                  key={title}
+                  className="border-gold/30 flex h-[280px] w-[77%] shrink-0 snap-start flex-col items-center justify-center rounded-xl border p-6 text-center sm:h-auto sm:w-auto sm:shrink sm:items-start sm:justify-start sm:text-left"
+                >
+                  <div className="bg-gold flex size-9 items-center justify-center rounded-md">
+                    <Image
+                      src="/coluna.svg"
+                      alt=""
+                      width={36}
+                      height={36}
+                      className="size-9"
+                    />
+                  </div>
 
-                <h3 className="text-ivory mt-6 font-sans text-xl font-medium">
-                  {title}
-                </h3>
-                <p className="text-ivory/70 mt-2 font-sans text-sm leading-relaxed">
-                  {description}
-                </p>
-              </div>
-            ))}
+                  <h3 className="text-ivory mt-6 font-sans text-xl font-medium">
+                    {title}
+                  </h3>
+                  <p className="text-ivory/70 mt-2 font-sans text-sm leading-relaxed">
+                    {description}
+                  </p>
+                </div>
+              ))}
+            </div>
+
+            <div
+              aria-hidden
+              className="from-navy-deep pointer-events-none absolute inset-y-0 right-0 w-16 bg-gradient-to-l sm:hidden"
+            />
           </div>
         </div>
       </div>
