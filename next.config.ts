@@ -4,6 +4,7 @@ const nextConfig: NextConfig = {
   cacheComponents: true,
   images: {
     qualities: [75, 100],
+    minimumCacheTTL: 60,
   },
   async redirects() {
     return [
