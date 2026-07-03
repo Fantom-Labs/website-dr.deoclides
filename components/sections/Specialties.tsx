@@ -31,7 +31,7 @@ export default function Specialties() {
           <div>
             <Eyebrow>Especialidades</Eyebrow>
 
-            <h2 className="text-ivory font-poppins mt-6 text-3xl leading-tight font-medium sm:text-4xl">
+            <h2 className="text-ivory font-poppins mt-6 text-[28px] leading-tight font-medium">
               Especializado no tratamento dos casos mais complexos da coluna
             </h2>
 
