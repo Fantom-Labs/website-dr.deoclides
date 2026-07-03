@@ -1,5 +1,3 @@
-"use client";
-
 import Link from "next/link";
 
 const navLinks = [
@@ -13,24 +11,26 @@ const navLinks = [
 export default function Footer() {
   return (
     <footer className="bg-navy-deep">
-      <div className="mx-auto max-w-6xl px-6 py-12">
-        <div className="flex flex-col gap-8 md:flex-row md:justify-between">
-          <div className="flex flex-col gap-1">
-            <span className="text-ivory font-serif text-lg">Dr. Deoclides</span>
-            <span className="text-ivory/60 font-sans text-sm">
+      <div className="mx-auto max-w-[1400px] px-4 py-16 sm:px-6 lg:px-8">
+        <div className="flex flex-col gap-10 lg:flex-row lg:items-start lg:justify-between">
+          <div className="max-w-sm">
+            <span className="text-ivory font-serif text-2xl">
+              Dr. Deoclides
+            </span>
+            <p className="text-ivory/60 mt-2 font-sans text-sm">
               Neurocirurgião · Especialista em Coluna
-            </span>
-            <span className="text-ivory/40 mt-1 font-sans text-xs">
-              CRM PE 17015 · RQE 1548
-            </span>
+            </p>
           </div>
 
-          <nav className="flex flex-col gap-2">
+          <nav className="flex flex-col gap-3">
+            <span className="text-ivory/40 font-sans text-xs font-semibold tracking-widest uppercase">
+              Navegação
+            </span>
             {navLinks.map(({ href, label }) => (
               <Link
                 key={href}
                 href={href}
-                className="text-ivory/60 hover:text-ivory font-sans text-sm transition-colors"
+                className="text-ivory/70 hover:text-ivory font-sans text-sm transition-colors"
               >
                 {label}
               </Link>
@@ -38,9 +38,12 @@ export default function Footer() {
           </nav>
         </div>
 
-        <div className="border-line mt-8 border-t pt-6">
+        <div className="border-line mt-12 flex flex-col gap-2 border-t pt-6 sm:flex-row sm:items-center sm:justify-between">
           <p className="text-ivory/40 font-sans text-xs">
             © 2026 Dr. Deoclides · Todos os direitos reservados
+          </p>
+          <p className="text-ivory/40 font-sans text-xs">
+            CRM PE 17015 · RQE 1548
           </p>
         </div>
       </div>
