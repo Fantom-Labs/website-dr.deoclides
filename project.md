@@ -116,6 +116,7 @@ Arquivo de referência: `conceito-visual-dr-deoclides.html`
 - Middleware renomeado para `proxy.ts`. Não usamos middleware pesado — provavelmente nenhum.
 - Node mínimo 20 — garantir no Netlify.
 - `images.qualities` agora é obrigatório para usar `quality` != 75 no `next/image` (senão o valor é descartado silenciosamente e cai de volta pra 75).
+- `images.minimumCacheTTL` mudou de 60s para 4h por padrão — reduzido de volta pra 60s no `next.config.ts`, senão imagens locais trocadas ficam em cache por horas em dev.
 
 ### Radix — apenas onde há a11y/interação
 
