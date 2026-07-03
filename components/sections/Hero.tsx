@@ -29,12 +29,12 @@ export default function Hero() {
       <div className="relative mx-auto w-full max-w-[1400px] bg-[#04192D] px-4 py-10 sm:px-6 lg:mt-[64px] lg:bg-transparent lg:px-8 lg:py-0">
         <div className="mx-auto max-w-xl text-center lg:mx-0 lg:text-left">
           <div className="text-ivory/70 mb-6 flex flex-wrap items-center justify-center gap-3 font-sans text-sm tracking-wide uppercase lg:justify-start">
-            <span>Neurocirurgião em Recife</span>
+            <span>Neurocirurgião</span>
             <span className="bg-ivory/40 size-1 rounded-full" aria-hidden />
             <span>Especialista em coluna</span>
           </div>
 
-          <h1 className="text-ivory font-poppins text-4xl leading-tight font-normal">
+          <h1 className="text-ivory font-poppins text-[32px] leading-tight font-normal lg:text-4xl">
             Por trás de cada coluna existe uma história. A sua merece ser olhada
             de forma única.
           </h1>
