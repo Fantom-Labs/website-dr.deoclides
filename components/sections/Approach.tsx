@@ -29,7 +29,7 @@ const pillars = [
 
 export default function Approach() {
   return (
-    <section className="bg-surface py-16 md:py-24">
+    <section className="bg-surface py-14">
       <div className="mx-auto max-w-[1400px] px-4 sm:px-6 lg:px-8">
         <h2 className="text-ink font-poppins max-w-md text-[28px] leading-tight font-medium">
           Do diagnóstico preciso à decisão certa

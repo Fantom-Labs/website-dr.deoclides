@@ -4,7 +4,7 @@ import { Eyebrow } from "@/components/ui/Eyebrow";
 
 export default function About() {
   return (
-    <section className="bg-surface py-16 md:py-24">
+    <section className="bg-surface py-14">
       <div className="mx-auto grid max-w-[1400px] grid-cols-1 gap-6 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
         <div className="relative aspect-[646/614] overflow-hidden rounded-2xl">
           <Image
