@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import { MobileNav } from "@/components/ui/MobileNav";
@@ -16,7 +18,11 @@ export default function Header() {
     <header className="sticky top-0 z-50">
       <div className="mx-auto flex h-24 max-w-[1400px] items-center px-4 sm:px-6 lg:px-8">
         <div className="border-line flex w-full items-center justify-between rounded-2xl border bg-white/90 py-3 pr-3 pl-4 shadow-[0_4px_9px_0_rgba(0,0,0,0.08)] backdrop-blur-md sm:pr-4 sm:pl-6">
-          <Link href="/" className="shrink-0">
+          <Link
+            href="/"
+            className="shrink-0"
+            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          >
             <Image
               src="/logo.svg"
               alt="Dr. Deoclides - Neurocirurgião Especialista em Coluna"

@@ -14,19 +14,18 @@ export default function Hero() {
         className="hidden object-cover object-center lg:block"
       />
 
-      <div className="relative aspect-[1800/1596] w-full lg:hidden">
-        <Image
-          src="/images/hero-mobile.png"
-          alt="Dr. Deoclides, neurocirurgião especialista em coluna"
-          fill
-          priority
-          quality={100}
-          sizes="100vw"
-          className="object-cover object-center"
-        />
-      </div>
+      <Image
+        src="/images/hero-mobile.png"
+        alt="Dr. Deoclides, neurocirurgião especialista em coluna"
+        width={1800}
+        height={1596}
+        priority
+        quality={100}
+        sizes="100vw"
+        className="block h-auto w-full lg:hidden"
+      />
 
-      <div className="relative mx-auto w-full max-w-[1400px] bg-[#04192D] px-4 py-10 sm:px-6 lg:mt-[64px] lg:bg-transparent lg:px-8 lg:py-0">
+      <div className="relative mx-auto w-full max-w-[1400px] bg-[#04192D] px-4 pt-2 pb-10 sm:px-6 lg:mt-[64px] lg:bg-transparent lg:px-8 lg:pt-0 lg:pb-0">
         <div className="mx-auto max-w-xl text-center lg:mx-0 lg:text-left">
           <div className="text-ivory/70 mb-6 flex flex-wrap items-center justify-center gap-3 font-sans text-sm tracking-wide uppercase lg:justify-start">
             <span>Neurocirurgião</span>

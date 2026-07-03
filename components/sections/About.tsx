@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import { Eyebrow } from "@/components/ui/Eyebrow";
 
 export default function About() {
@@ -17,8 +16,8 @@ export default function About() {
           />
         </div>
 
-        <div className="bg-navy-deep flex flex-col justify-center gap-6 rounded-2xl p-8 sm:p-12">
-          <Eyebrow>Minha história</Eyebrow>
+        <div className="bg-navy-deep flex flex-col justify-center gap-6 rounded-2xl p-8 text-center sm:p-12 lg:text-left">
+          <Eyebrow className="mx-auto lg:mx-0">Minha história</Eyebrow>
 
           <h2 className="text-ivory font-poppins text-[28px] leading-tight font-medium">
             Uma carreira inteira dedicada a cuidar de colunas
@@ -33,19 +32,7 @@ export default function About() {
             o tratamento da escoliose e dos casos complexos.
           </p>
 
-          <Link
-            href="/sobre"
-            className="border-gold/30 text-ivory hover:bg-ivory/5 mt-2 inline-flex w-fit items-center gap-4 rounded-full border px-5 py-3 font-sans text-lg font-medium backdrop-blur-md transition-colors"
-          >
-            <Image
-              src="/play.svg"
-              alt=""
-              width={17}
-              height={19}
-              className="h-4 w-auto"
-            />
-            Conheça minha trajetória
-          </Link>
+          {/* Botão desativado — apontava para /sobre, rota desativada (ver next.config.ts). Reativar junto com a rota. */}
         </div>
       </div>
     </section>
