@@ -31,7 +31,7 @@ export default function Approach() {
   return (
     <section className="bg-surface py-14">
       <div className="mx-auto max-w-[1400px] px-4 sm:px-6 lg:px-8">
-        <h2 className="text-ink font-poppins max-w-md text-[28px] leading-tight font-medium">
+        <h2 className="text-ink font-poppins mx-auto max-w-md text-center text-[28px] leading-tight font-medium lg:mx-0 lg:text-left">
           Do diagnóstico preciso à decisão certa
         </h2>
 

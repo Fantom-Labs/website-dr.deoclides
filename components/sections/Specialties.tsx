@@ -27,8 +27,8 @@ export default function Specialties() {
   return (
     <section className="bg-surface py-14">
       <div className="mx-auto max-w-[1400px] px-4 sm:px-6 lg:px-8">
-        <div className="bg-navy-deep grid grid-cols-1 gap-10 rounded-2xl p-20 lg:grid-cols-[35fr_65fr] lg:items-start">
-          <div>
+        <div className="bg-navy-deep grid grid-cols-1 gap-10 rounded-2xl p-6 sm:p-12 lg:grid-cols-[35fr_65fr] lg:items-start lg:p-20">
+          <div className="text-center lg:text-left">
             <Eyebrow>Especialidades</Eyebrow>
 
             <h2 className="text-ivory font-poppins mt-6 text-[28px] leading-tight font-medium">
@@ -43,7 +43,10 @@ export default function Specialties() {
 
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
             {specialties.map(({ title, description }) => (
-              <div key={title} className="border-gold/30 rounded-xl border p-6">
+              <div
+                key={title}
+                className="border-gold/30 flex flex-col items-center rounded-xl border p-6 text-center lg:items-start lg:text-left"
+              >
                 <div className="bg-gold flex size-9 items-center justify-center rounded-md">
                   <Image
                     src="/coluna.svg"
