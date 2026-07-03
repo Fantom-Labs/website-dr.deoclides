@@ -126,8 +126,8 @@ Vai no `<head>` de todas as páginas. Placeholders marcados com `[...]` entram q
   "name": "Dr. Deoclides",
   "alternateName": "Deoclides Lima Bezerra Junior",
   "medicalSpecialty": "Neurosurgery",
-  "url": "https://doutordeoclides.com.br",
-  "image": "https://doutordeoclides.com.br/og/dr-deoclides.jpg",
+  "url": "https://drdeoclides.com.br",
+  "image": "https://drdeoclides.com.br/og/dr-deoclides.jpg",
   "description": "Neurocirurgião especialista em coluna e escoliose em Recife/PE. Tratamento de casos complexos de coluna.",
   "telephone": "[WhatsApp/telefone a confirmar]",
   "sameAs": [

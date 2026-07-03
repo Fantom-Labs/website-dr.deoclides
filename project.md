@@ -12,7 +12,7 @@ Site institucional de marketing para o **Dr. Deoclides**, neurocirurgião especi
 
 **Não é** um app/dashboard. É conteúdo que precisa rankear (SEO) e carregar rápido (Core Web Vitals). Isso define toda a stack.
 
-- **Domínio:** `doutordeoclides.com.br` (registro pela Kommu, no CPF do Dr. Deoclides)
+- **Domínio:** `drdeoclides.com.br` (registro pela Kommu, no CPF do Dr. Deoclides)
 - **Prazo-alvo:** ~30 dias
 - **Repositório:** GitHub `fantom-labs`
 
@@ -79,7 +79,7 @@ Extraídos de vídeo gravado pelo próprio Dr. Deoclides. Esta é a voz real —
 
 A coluna como eixo do design: vertical, segmentada em vértebras, com a curva da escoliose. O motivo da coluna (traço dourado) é o elemento-assinatura que percorre as páginas. Ecoa a própria voz do médico ("por trás de cada coluna existe uma história").
 
-Arquivo de referência: `conceito-visual-dr-deoclides.html`
+Guia de design system (cores, tipografia, padrões visuais e lista de seções da Home): `conceito-visual-dr-deoclides.html`
 
 ---
 
@@ -244,7 +244,7 @@ Banner de consentimento que **gateia** GA4, Meta Pixel e Google Ads — scripts 
 - CTA primário do site continua sendo **WhatsApp**. O formulário é secundário.
 - Fluxo: `app/api/contato/route.ts` recebe POST → valida honeypot + Cloudflare Turnstile → valida com Zod → dispara e-mail via Resend (template React Email) para o consultório.
 - O mesmo schema Zod valida no cliente (UX, via React Hook Form) e no servidor (segurança).
-- Domínio de envio verificado: `doutordeoclides.com.br`.
+- Domínio de envio verificado: `drdeoclides.com.br`.
 
 ---
 
@@ -293,7 +293,7 @@ Consultório 30% · Bloco cirúrgico 30% · Preceptoria/educação (HR) 20% · S
 8. SEO técnico: metadata, structured data, sitemap, robots
 9. Banner LGPD + injeção condicional de analytics
 
-**Depende da Kommu (reta final, não bloqueia):** 10. Apontar `doutordeoclides.com.br` para o Netlify 11. IDs de tracking (GA4, Google Ads, Meta Pixel) 12. Retratos profissionais (design funciona com placeholder até lá) 13. Vetores da marca + manual
+**Depende da Kommu (reta final, não bloqueia):** 10. Apontar `drdeoclides.com.br` para o Netlify 11. IDs de tracking (GA4, Google Ads, Meta Pixel) 12. Retratos profissionais (design funciona com placeholder até lá) 13. Vetores da marca + manual
 
 ---
 
