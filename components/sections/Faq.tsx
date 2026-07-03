@@ -34,17 +34,24 @@ export default function Faq() {
   return (
     <section className="bg-surface py-14">
       <div className="mx-auto max-w-[1400px] px-4 sm:px-6 lg:px-8">
-        <div className="border-line grid grid-cols-1 gap-10 rounded-2xl border bg-white p-20 lg:grid-cols-[35fr_65fr]">
-          <div>
+        <div className="border-line grid grid-cols-1 gap-10 rounded-2xl border bg-white p-20 text-center lg:grid-cols-[35fr_65fr] lg:text-left">
+          <div className="lg:col-start-1 lg:row-start-1">
             <p className="text-navy font-sans text-sm font-semibold tracking-wide">
               FAQ
             </p>
 
             <h2 className="text-ink font-poppins mt-4 text-[28px] leading-tight font-medium">
-              As perguntas que mais ouço no consultório
+              As perguntas mais frequentes no consultório
             </h2>
+          </div>
 
-            <p className="text-slate mt-4 font-sans leading-relaxed">
+          <Accordion
+            items={faqItems}
+            className="lg:col-start-2 lg:row-span-2 lg:row-start-1"
+          />
+
+          <div className="lg:col-start-1 lg:row-start-2">
+            <p className="text-slate font-sans leading-relaxed">
               Não encontrou a resposta? Nossa equipe está pronta para esclarecer
               suas dúvidas sobre nossos tratamentos.
             </p>
@@ -63,8 +70,6 @@ export default function Faq() {
               Envie uma mensagem
             </Link>
           </div>
-
-          <Accordion items={faqItems} />
         </div>
       </div>
     </section>

@@ -31,8 +31,8 @@ export default function Testimonials() {
         </div>
 
         <h2 className="text-ink font-poppins mt-6 text-center text-[28px] leading-tight font-medium">
-          O que os pacientes dizem sobre
-          <br />o Dr. Deoclides
+          O que os pacientes dizem
+          <br />sobre o Dr. Deoclides
         </h2>
 
         <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
