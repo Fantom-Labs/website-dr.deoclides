@@ -25,9 +25,9 @@ const specialties = [
 
 export default function Specialties() {
   return (
-    <section className="bg-surface py-14">
+    <section className="bg-surface py-8 lg:py-14">
       <div className="mx-auto max-w-[1400px] px-4 sm:px-6 lg:px-8">
-        <div className="bg-navy-deep grid grid-cols-1 gap-10 rounded-2xl p-6 sm:p-12 lg:grid-cols-[35fr_65fr] lg:items-start lg:p-20">
+        <div className="bg-navy-deep grid grid-cols-1 gap-10 rounded-2xl px-6 py-8 sm:p-12 lg:grid-cols-[35fr_65fr] lg:items-start lg:p-20">
           <div className="text-center lg:text-left">
             <Eyebrow>Especialidades</Eyebrow>
 

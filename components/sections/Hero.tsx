@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section className="relative -mt-24 flex min-h-[860px] items-start overflow-hidden pt-24 pb-14 lg:min-h-screen">
+    <section className="relative -mt-24 flex min-h-[860px] items-start overflow-hidden pt-24 pb-8 lg:min-h-screen lg:pb-14">
       <Image
         src="/images/hero-image.png"
         alt="Dr. Deoclides, neurocirurgião especialista em coluna"

@@ -17,13 +17,32 @@ const locations = [
 
 export default function Locations() {
   return (
-    <section className="bg-surface py-14">
+    <section className="bg-surface py-8 lg:py-14">
       <div className="mx-auto max-w-[1200px] px-4 sm:px-6 lg:px-8">
-        <div className="bg-navy-deep grid min-h-[600px] grid-cols-1 gap-10 rounded-2xl p-6 sm:p-12 lg:grid-cols-[35fr_65fr] lg:p-20">
-          <div className="order-2 text-center lg:order-1 lg:text-left">
+        <div className="bg-navy-deep grid min-h-[600px] grid-cols-1 gap-10 rounded-2xl px-6 py-8 sm:p-12 lg:grid-cols-[35fr_65fr] lg:p-20">
+          <div className="order-1 text-center lg:hidden">
             <Eyebrow>Locais de atendimento</Eyebrow>
+          </div>
 
-            <h2 className="text-ivory font-poppins mt-6 text-[28px] leading-tight font-medium">
+          <div className="order-2 flex flex-col gap-6 lg:order-2">
+            {locations.map(({ name, embedSrc }) => (
+              <iframe
+                key={name}
+                src={embedSrc}
+                loading="lazy"
+                referrerPolicy="strict-origin-when-cross-origin"
+                title={`Mapa — ${name}`}
+                className="h-[200px] w-full max-w-[588px] rounded-2xl border-0"
+              />
+            ))}
+          </div>
+
+          <div className="order-3 text-center lg:order-1 lg:text-left">
+            <div className="hidden lg:block">
+              <Eyebrow>Locais de atendimento</Eyebrow>
+            </div>
+
+            <h2 className="text-ivory font-poppins text-[28px] leading-tight font-medium lg:mt-6">
               Atendimento em ambientes pensados para o seu cuidado
             </h2>
 
@@ -45,19 +64,6 @@ export default function Locations() {
               />
               Agende uma avaliação
             </Link>
-          </div>
-
-          <div className="order-1 flex flex-col gap-6 lg:order-2">
-            {locations.map(({ name, embedSrc }) => (
-              <iframe
-                key={name}
-                src={embedSrc}
-                loading="lazy"
-                referrerPolicy="strict-origin-when-cross-origin"
-                title={`Mapa — ${name}`}
-                className="h-[200px] w-full max-w-[588px] rounded-2xl border-0"
-              />
-            ))}
           </div>
         </div>
       </div>
