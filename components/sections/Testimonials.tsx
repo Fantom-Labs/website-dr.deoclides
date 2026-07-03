@@ -30,7 +30,7 @@ export default function Testimonials() {
           <Eyebrow className="!text-ink">Depoimentos</Eyebrow>
         </div>
 
-        <h2 className="text-ink font-poppins mt-6 text-center text-3xl leading-tight font-medium sm:text-4xl">
+        <h2 className="text-ink font-poppins mt-6 text-center text-[28px] leading-tight font-medium">
           O que os pacientes dizem sobre
           <br />o Dr. Deoclides
         </h2>

@@ -20,7 +20,7 @@ export default function About() {
         <div className="bg-navy-deep flex flex-col justify-center gap-6 rounded-2xl p-8 sm:p-12">
           <Eyebrow>Minha história</Eyebrow>
 
-          <h2 className="text-ivory font-poppins text-4xl leading-tight font-medium sm:text-4xl">
+          <h2 className="text-ivory font-poppins text-[28px] leading-tight font-medium">
             Uma carreira inteira dedicada a cuidar de colunas
           </h2>
 

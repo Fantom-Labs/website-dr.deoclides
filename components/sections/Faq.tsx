@@ -40,7 +40,7 @@ export default function Faq() {
               FAQ
             </p>
 
-            <h2 className="text-ink font-poppins mt-4 text-3xl leading-tight font-medium">
+            <h2 className="text-ink font-poppins mt-4 text-[28px] leading-tight font-medium">
               As perguntas que mais ouço no consultório
             </h2>
 
