@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section className="relative -mt-24 flex min-h-[860px] items-start overflow-hidden pt-24 pb-8 lg:min-h-screen lg:pb-14">
+    <section className="relative -mt-24 overflow-hidden lg:flex lg:min-h-screen lg:items-start lg:pt-24 lg:pb-14">
       <Image
         src="/images/hero-image.png"
         alt="Dr. Deoclides, neurocirurgião especialista em coluna"
@@ -11,12 +11,24 @@ export default function Hero() {
         priority
         quality={100}
         sizes="100vw"
-        className="object-cover object-center"
+        className="hidden object-cover object-center lg:block"
       />
 
-      <div className="relative mx-auto mt-[64px] w-full max-w-[1400px] px-4 sm:px-6 lg:px-8">
-        <div className="max-w-xl">
-          <div className="text-ivory/70 mb-6 flex flex-wrap items-center gap-3 font-sans text-sm tracking-wide uppercase">
+      <div className="relative aspect-[1800/1596] w-full lg:hidden">
+        <Image
+          src="/images/hero-mobile.png"
+          alt="Dr. Deoclides, neurocirurgião especialista em coluna"
+          fill
+          priority
+          quality={100}
+          sizes="100vw"
+          className="object-cover object-center"
+        />
+      </div>
+
+      <div className="relative mx-auto w-full max-w-[1400px] bg-[#04192D] px-4 py-10 sm:px-6 lg:mt-[64px] lg:bg-transparent lg:px-8 lg:py-0">
+        <div className="mx-auto max-w-xl text-center lg:mx-0 lg:text-left">
+          <div className="text-ivory/70 mb-6 flex flex-wrap items-center justify-center gap-3 font-sans text-sm tracking-wide uppercase lg:justify-start">
             <span>Neurocirurgião em Recife</span>
             <span className="bg-ivory/40 size-1 rounded-full" aria-hidden />
             <span>Especialista em coluna</span>
