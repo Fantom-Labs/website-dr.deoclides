@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: ["/studio/", "/api/"],
     },
-    sitemap: "https://doutordeoclides.com.br/sitemap.xml",
+    sitemap: "https://drdeoclides.com.br/sitemap.xml",
   };
 }

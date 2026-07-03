@@ -1,4 +1,4 @@
-const BASE_URL = "https://doutordeoclides.com.br";
+const BASE_URL = "https://drdeoclides.com.br";
 
 export function physicianJsonLd() {
   return {

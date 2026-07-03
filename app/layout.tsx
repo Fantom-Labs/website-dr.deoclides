@@ -24,7 +24,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://doutordeoclides.com.br"),
+  metadataBase: new URL("https://drdeoclides.com.br"),
   title: {
     template: "%s · Dr. Deoclides",
     default: "Dr. Deoclides — Neurocirurgião Especialista em Coluna | Recife",

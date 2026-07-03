@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 
-const BASE_URL = "https://doutordeoclides.com.br";
+const BASE_URL = "https://drdeoclides.com.br";
 const LAST_MODIFIED = "2026-06-19";
 
 export default function sitemap(): MetadataRoute.Sitemap {
