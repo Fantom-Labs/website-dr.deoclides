@@ -22,7 +22,7 @@ export default function Hero() {
             <span>Especialista em coluna</span>
           </div>
 
-          <h1 className="text-ivory font-poppins text-4xl leading-tight font-normal sm:text-5xl">
+          <h1 className="text-ivory font-poppins text-4xl leading-tight font-normal">
             Por trás de cada coluna existe uma história. A sua merece ser olhada
             de forma única.
           </h1>
