@@ -53,7 +53,7 @@ export default function Locations() {
 
             <Link
               href="/contato"
-              className="border-gold/30 text-ivory mt-6 inline-flex w-fit items-center gap-3 rounded-xl border bg-[#032c58] px-6 py-4 font-sans text-base font-medium backdrop-blur-md transition-colors hover:bg-[#032c58]/90"
+              className="border-gold/30 text-ivory mt-6 inline-flex w-fit items-center gap-3 rounded-xl border bg-[#032c58] px-6 py-4 font-sans text-base font-medium whitespace-nowrap backdrop-blur-md transition-colors hover:bg-[#032c58]/90"
             >
               <Image
                 src="/zap.svg"
