@@ -17,10 +17,10 @@ const locations = [
 
 export default function Locations() {
   return (
-    <section className="bg-surface py-16 md:py-24">
-      <div className="mx-auto max-w-[1400px] px-4 sm:px-6 lg:px-8">
-        <div className="bg-navy-deep grid grid-cols-1 gap-10 rounded-2xl p-20 lg:grid-cols-[35fr_65fr]">
-          <div className="order-2 lg:order-1">
+    <section className="bg-surface py-14">
+      <div className="mx-auto max-w-[1200px] px-4 sm:px-6 lg:px-8">
+        <div className="bg-navy-deep grid min-h-[600px] grid-cols-1 gap-10 rounded-2xl p-6 sm:p-12 lg:grid-cols-[35fr_65fr] lg:p-20">
+          <div className="order-2 text-center lg:order-1 lg:text-left">
             <Eyebrow>Locais de atendimento</Eyebrow>
 
             <h2 className="text-ivory font-poppins mt-6 text-[28px] leading-tight font-medium">
@@ -55,7 +55,7 @@ export default function Locations() {
                 loading="lazy"
                 referrerPolicy="strict-origin-when-cross-origin"
                 title={`Mapa — ${name}`}
-                className="h-60 w-full rounded-2xl border-0"
+                className="h-[200px] w-full max-w-[588px] rounded-2xl border-0"
               />
             ))}
           </div>
