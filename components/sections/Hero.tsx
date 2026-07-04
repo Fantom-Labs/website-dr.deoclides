@@ -27,7 +27,7 @@ export default function Hero() {
 
       <div className="relative mx-auto w-full max-w-[1400px] bg-[#04192D] px-4 pt-2 pb-10 sm:px-6 lg:mt-[64px] lg:bg-transparent lg:px-8 lg:pt-0 lg:pb-0">
         <div className="mx-auto max-w-xl text-center lg:mx-0 lg:text-left">
-          <div className="text-ivory/70 mb-6 flex flex-wrap items-center justify-center gap-3 font-sans text-sm tracking-wide uppercase lg:justify-start">
+          <div className="border-gold/40 bg-gold/10 text-ivory mb-6 inline-flex flex-wrap items-center justify-center gap-3 rounded-full border px-4 py-1.5 font-sans text-[10px] tracking-wide uppercase lg:justify-start lg:text-sm">
             <span>Neurocirurgião</span>
             <span className="bg-ivory/40 size-1 rounded-full" aria-hidden />
             <span>Especialista em coluna</span>
