@@ -11,12 +11,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 1,
     },
-    {
-      url: `${BASE_URL}/sobre`,
-      lastModified: LAST_MODIFIED,
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
+    // "/sobre" fica fora até a rota ser reativada — hoje é redirect 307 para "/" (ver next.config.ts).
     {
       url: `${BASE_URL}/especialidades`,
       lastModified: LAST_MODIFIED,
