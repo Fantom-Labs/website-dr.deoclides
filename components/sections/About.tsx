@@ -20,7 +20,8 @@ export default function About() {
           <Eyebrow className="mx-auto lg:mx-0">Minha história</Eyebrow>
 
           <h2 className="text-ivory font-poppins text-[28px] leading-tight font-medium">
-            Uma carreira inteira dedicada a cuidar de colunas
+            Uma carreira inteira dedicada
+            <br className="hidden lg:block" /> a cuidar de colunas
           </h2>
 
           <p className="text-ivory/70 font-sans text-lg leading-relaxed">
