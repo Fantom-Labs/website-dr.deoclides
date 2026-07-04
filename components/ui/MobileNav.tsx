@@ -4,6 +4,7 @@ import * as Dialog from "@radix-ui/react-dialog";
 import Link from "next/link";
 
 const navLinks = [
+  { href: "/", label: "Início" },
   // { href: "/sobre", label: "Sobre" }, // rota desativada — ver next.config.ts
   { href: "/especialidades", label: "Especialidades" },
   { href: "/academico", label: "Acadêmico" },
