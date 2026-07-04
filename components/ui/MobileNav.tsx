@@ -6,10 +6,10 @@ import Link from "next/link";
 const navLinks = [
   { href: "/", label: "Início" },
   // { href: "/sobre", label: "Sobre" }, // rota desativada — ver next.config.ts
-  { href: "/especialidades", label: "Especialidades" },
+  { href: "/#especialidades", label: "Especialidades" },
   { href: "/academico", label: "Acadêmico" },
   { href: "/blog", label: "Blog" },
-  { href: "/contato", label: "Contato" },
+  // { href: "/contato", label: "Contato" }, // rota ainda não construída
 ];
 
 export function MobileNav() {
