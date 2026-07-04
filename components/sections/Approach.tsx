@@ -49,7 +49,7 @@ export default function Approach() {
 
           <div className="flex flex-col gap-20">
             {pillars.map(({ icon, title, description }) => (
-              <div key={title} className="flex items-center gap-6">
+              <div key={title} className="flex items-start gap-6">
                 <Image
                   src={icon}
                   alt=""

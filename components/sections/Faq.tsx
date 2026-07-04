@@ -34,7 +34,7 @@ export default function Faq() {
   return (
     <section className="bg-surface py-8 lg:py-14">
       <div className="mx-auto max-w-[1400px] px-4 sm:px-6 lg:px-8">
-        <div className="border-line grid grid-cols-1 gap-10 rounded-2xl border bg-white p-20 text-center lg:grid-cols-[35fr_65fr] lg:text-left">
+        <div className="border-line grid grid-cols-1 gap-10 rounded-2xl border bg-white px-6 py-8 text-center sm:p-12 lg:grid-cols-[35fr_65fr] lg:p-20 lg:text-left">
           <div className="lg:col-start-1 lg:row-start-1">
             <p className="text-navy font-sans text-sm font-semibold tracking-wide">
               FAQ
