@@ -356,9 +356,10 @@ export type PostBySlugQueryResult = {
 
 // Source: lib/sanity/queries.ts
 // Variable: postSlugsQuery
-// Query: *[_type == "post" && defined(slug.current)]{ "slug": slug.current }
+// Query: *[_type == "post" && defined(slug.current)]{ "slug": slug.current, publishedAt }
 export type PostSlugsQueryResult = Array<{
   slug: string | null;
+  publishedAt: string | null;
 }>;
 
 // Query TypeMap
@@ -367,6 +368,6 @@ declare module "@sanity/client" {
   interface SanityQueries {
     '\n  *[_type == "post" && defined(slug.current)] | order(publishedAt desc) {\n    _id,\n    title,\n    slug,\n    publishedAt,\n    excerpt,\n    mainImage,\n    "author": author->{ name, image },\n    "categories": categories[]->{ name, slug }\n  }\n': PostsQueryResult;
     '\n  *[_type == "post" && slug.current == $slug][0] {\n    _id,\n    _updatedAt,\n    title,\n    slug,\n    publishedAt,\n    excerpt,\n    mainImage,\n    body,\n    "author": author->{ name, image },\n    "categories": categories[]->{ name, slug },\n    seo\n  }\n': PostBySlugQueryResult;
-    '\n  *[_type == "post" && defined(slug.current)]{ "slug": slug.current }\n': PostSlugsQueryResult;
+    '\n  *[_type == "post" && defined(slug.current)]{ "slug": slug.current, publishedAt }\n': PostSlugsQueryResult;
   }
 }

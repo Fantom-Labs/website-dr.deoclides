@@ -30,5 +30,5 @@ export const postBySlugQuery = groq`
 `;
 
 export const postSlugsQuery = groq`
-  *[_type == "post" && defined(slug.current)]{ "slug": slug.current }
+  *[_type == "post" && defined(slug.current)]{ "slug": slug.current, publishedAt }
 `;

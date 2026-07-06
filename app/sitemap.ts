@@ -1,9 +1,31 @@
 import type { MetadataRoute } from "next";
+import { cacheLife, cacheTag } from "next/cache";
+import { client } from "@/lib/sanity/client";
+import { postSlugsQuery } from "@/lib/sanity/queries";
+import type { PostSlugsQueryResult } from "@/sanity.types";
 
 const BASE_URL = "https://drdeoclides.com.br";
 const LAST_MODIFIED = "2026-06-19";
 
-export default function sitemap(): MetadataRoute.Sitemap {
+async function getPostEntries() {
+  "use cache";
+  cacheTag("posts");
+  cacheLife("hours");
+  return client.fetch<PostSlugsQueryResult>(postSlugsQuery);
+}
+
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
+  const posts = await getPostEntries();
+
+  const postEntries: MetadataRoute.Sitemap = posts
+    .filter((post) => post.slug)
+    .map((post) => ({
+      url: `${BASE_URL}/blog/${post.slug}`,
+      lastModified: post.publishedAt ?? LAST_MODIFIED,
+      changeFrequency: "monthly",
+      priority: 0.5,
+    }));
+
   return [
     {
       url: BASE_URL,
@@ -36,5 +58,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.6,
     },
+    ...postEntries,
   ];
 }
