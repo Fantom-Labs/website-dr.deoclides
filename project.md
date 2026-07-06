@@ -211,13 +211,15 @@ content/
 
 ## 9. Sanity (CMS)
 
-**Fase 1 — apenas blog.** Schema inicial:
+**Fase 1 — blog (concluída).** Schema implementado em `sanity/schemas/`:
 
-- `post` — title, slug, excerpt, coverImage (hotspot), body (Portable Text), category (ref), publishedAt, seo (title/description/og)
-- `author` — Dr. Deoclides (single)
-- `category` — nome, slug
+- `post` — title, slug, author (ref), categories (ref[]), mainImage (hotspot + alt obrigatório), publishedAt, excerpt, body (Portable Text), seo (metaTitle/metaDescription/ogImage). Tem *initial value* pré-preenchido (estrutura de seções + data de hoje) pra acelerar a criação de posts no Studio.
+- `author` — nome, slug, bio, image
+- `category` — nome, slug, description
 
-Revalidação: webhook do Sanity → `app/api/revalidate/route.ts` → `revalidateTag`. Conteúdo fresco sem rebuild.
+Queries GROQ tipadas via Sanity TypeGen em `lib/sanity/queries.ts` (`postsQuery`, `postBySlugQuery`, `postSlugsQuery`) → `sanity.types.ts` gerado por `npm run typegen`. Páginas `/blog` (listagem) e `/blog/[slug]` (post, com Portable Text, JSON-LD Article e metadata dinâmica) implementadas e testadas.
+
+Revalidação: webhook do Sanity → `app/api/revalidate/route.ts` → `revalidateTag('posts', { expire: 0 })`, autenticado por header `Authorization` comparado a `SANITY_REVALIDATE_SECRET`. Conteúdo fresco sem rebuild.
 
 **Fase futura:** páginas por especialidade e seção "Para Médicos" entram no mesmo schema, permitindo à Kommu publicar sem deploy.
 
@@ -288,7 +290,7 @@ Consultório 30% · Bloco cirúrgico 30% · Preceptoria/educação (HR) 20% · S
 3. Layout base (header + footer) + sistema de componentes
 4. Home (seções na ordem da seção 8) com conteúdo placeholder
 5. Páginas Sobre, Especialidades, Acadêmico, Contato
-6. Sanity: schema do blog + Studio em `/studio` + páginas de blog + webhook de revalidação
+6. ~~Sanity: schema do blog + Studio em `/studio` + páginas de blog + webhook de revalidação~~ ✅
 7. Formulário de contato → Resend
 8. SEO técnico: metadata, structured data, sitemap, robots
 9. Banner LGPD + injeção condicional de analytics
