@@ -9,7 +9,8 @@
     "lint": "eslint",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "lhci": "lhci autorun"
+    "lhci": "lhci autorun",
+    "typegen": "sanity schema extract --path=schema.json && sanity typegen generate"
   },
   "dependencies": {
     "@radix-ui/react-accordion": "^1.2.14",

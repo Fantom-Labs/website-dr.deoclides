@@ -40,3 +40,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# sanity typegen (artefato intermediário, regenerado via `npm run typegen`)
+schema.json
