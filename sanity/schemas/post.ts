@@ -1,9 +1,45 @@
 import { defineArrayMember, defineField, defineType } from "sanity";
 
+function block(style: "normal" | "h2" | "h3" | "blockquote", text: string) {
+  return {
+    _type: "block" as const,
+    _key: crypto.randomUUID(),
+    style,
+    markDefs: [],
+    children: [{ _type: "span" as const, _key: crypto.randomUUID(), text }],
+  };
+}
+
 export const post = defineType({
   name: "post",
   title: "Post",
   type: "document",
+  initialValue: () => ({
+    publishedAt: new Date().toISOString(),
+    body: [
+      block("h2", "Introdução"),
+      block(
+        "normal",
+        "Escreva aqui um parágrafo de abertura que conecta com a dúvida ou o medo do leitor.",
+      ),
+      block("h2", "O que diz a ciência"),
+      block(
+        "normal",
+        "Explique aqui o conteúdo técnico de forma acessível — causas, evidências, tratamento.",
+      ),
+      block("h3", "Quando procurar um especialista"),
+      block(
+        "normal",
+        "Liste sinais de alerta ou situações em que vale buscar avaliação médica.",
+      ),
+      block("blockquote", "Nem toda dor na coluna precisa de cirurgia."),
+      block("h2", "Conclusão"),
+      block(
+        "normal",
+        "Feche reforçando a promessa central — devolver autonomia, movimento e independência — e convide para agendar uma avaliação.",
+      ),
+    ],
+  }),
   fields: [
     defineField({
       name: "title",
@@ -74,12 +110,16 @@ export const post = defineType({
           name: "metaTitle",
           title: "Meta título",
           type: "string",
+          description:
+            "Título para buscadores. Inclua a palavra-chave principal do post (ex.: 'escoliose tem cura'). Até 60 caracteres.",
           validation: (Rule) => Rule.max(60),
         }),
         defineField({
           name: "metaDescription",
           title: "Meta descrição",
           type: "text",
+          description:
+            "Descrição para buscadores e compartilhamento. Palavra-chave + gancho. Até 160 caracteres.",
           validation: (Rule) => Rule.max(160),
         }),
         defineField({
