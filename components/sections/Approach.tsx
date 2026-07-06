@@ -32,7 +32,7 @@ export default function Approach() {
     <section className="bg-surface py-8 lg:py-14">
       <div className="mx-auto max-w-[1400px] px-4 sm:px-6 lg:px-8">
         <h2 className="text-ink font-poppins mx-auto max-w-md text-center text-[28px] leading-tight font-medium lg:mx-0 lg:text-left">
-          Do diagnóstico preciso à decisão certa
+          Como cuidamos do seu caso
         </h2>
 
         <div className="mt-6 grid grid-cols-1 gap-10 lg:grid-cols-2 lg:gap-16">
