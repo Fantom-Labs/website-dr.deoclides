@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { cacheLife, cacheTag } from "next/cache";
 import { PostCard } from "@/components/blog/PostCard";
 import { Container } from "@/components/ui/Container";
-import { Heading } from "@/components/ui/Heading";
 import { Section } from "@/components/ui/Section";
 import { client } from "@/lib/sanity/client";
 import { postsQuery } from "@/lib/sanity/queries";
@@ -28,7 +27,9 @@ export default async function BlogPage() {
     <main className="bg-surface flex flex-1 flex-col">
       <Section>
         <Container className="flex flex-col gap-12">
-          <Heading as="h1">Blog</Heading>
+          <h1 className="text-navy font-poppins text-4xl leading-tight font-medium md:text-5xl lg:text-6xl">
+            Artigos
+          </h1>
 
           {posts.length === 0 ? (
             <p className="text-slate font-sans text-lg">
