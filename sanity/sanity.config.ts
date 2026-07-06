@@ -1,5 +1,8 @@
 import { defineConfig } from "sanity";
 import { structureTool } from "sanity/structure";
+import { author } from "./schemas/author";
+import { category } from "./schemas/category";
+import { post } from "./schemas/post";
 
 const projectId = process.env.NEXT_PUBLIC_SANITY_PROJECT_ID ?? "";
 const dataset = process.env.NEXT_PUBLIC_SANITY_DATASET ?? "production";
@@ -11,6 +14,6 @@ export default defineConfig({
   dataset,
   plugins: [structureTool()],
   schema: {
-    types: [], // schemas de conteúdo adicionados no EP-02 (blog)
+    types: [post, author, category],
   },
 });
