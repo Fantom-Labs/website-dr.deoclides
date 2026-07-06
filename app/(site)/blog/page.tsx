@@ -27,19 +27,15 @@ export default async function BlogPage() {
     <main className="bg-surface flex flex-1 flex-col">
       <Section>
         <Container className="flex flex-col gap-12">
-          <h1 className="text-navy font-poppins text-4xl leading-tight font-medium md:text-5xl lg:text-6xl">
-            Artigos
-          </h1>
-
           {posts.length === 0 ? (
             <p className="text-slate font-sans text-lg">
               Em breve, conteúdo sobre saúde da coluna.
             </p>
           ) : (
             <ul className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
-              {posts.map((post) => (
+              {posts.map((post, index) => (
                 <li key={post._id}>
-                  <PostCard post={post} />
+                  <PostCard post={post} priority={index === 0} />
                 </li>
               ))}
             </ul>
