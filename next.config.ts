@@ -5,6 +5,7 @@ const nextConfig: NextConfig = {
   images: {
     qualities: [75, 100],
     minimumCacheTTL: 60,
+    remotePatterns: [{ protocol: "https", hostname: "cdn.sanity.io" }],
   },
   async redirects() {
     return [
