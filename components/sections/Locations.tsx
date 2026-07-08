@@ -62,7 +62,7 @@ export default function Locations() {
                 height={24}
                 className="size-6"
               />
-              Agende uma avaliação
+              Agende sua Consulta
             </Link>
           </div>
         </div>

@@ -55,7 +55,7 @@ export default function Header() {
               height={24}
               className="size-6"
             />
-            Agende uma avaliação
+            Agende sua Consulta
           </Link>
 
           <MobileNav />
