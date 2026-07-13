@@ -38,7 +38,7 @@ export default function Approach() {
         <div className="mt-6 grid grid-cols-1 gap-10 lg:grid-cols-2 lg:gap-16">
           <div className="relative aspect-[556/592] overflow-hidden rounded-2xl">
             <Image
-              src="/images/s4-img.png"
+              src="/images/s5-img.png"
               alt="Dr. Deoclides em consulta com paciente"
               fill
               quality={100}

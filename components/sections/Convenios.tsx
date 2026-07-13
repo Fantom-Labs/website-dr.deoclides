@@ -23,7 +23,7 @@ export default function Convenios() {
       <div className="mx-auto grid max-w-[1400px] grid-cols-1 gap-10 px-4 sm:px-6 lg:grid-cols-2 lg:gap-16 lg:px-8">
         <div className="relative aspect-[556/592] overflow-hidden rounded-2xl lg:order-2">
           <Image
-            src="/images/s5-img.png"
+            src="/images/s4-img.png"
             alt="Dr. Deoclides"
             fill
             quality={100}
