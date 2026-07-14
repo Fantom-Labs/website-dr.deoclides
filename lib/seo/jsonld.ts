@@ -14,8 +14,8 @@ export function physicianJsonLd() {
       { "@type": "PropertyValue", name: "RQE", value: "1548" },
     ],
     medicalSpecialty: [
-      { "@type": "MedicalSpecialty", name: "Neurosurgery" },
-      { "@type": "MedicalSpecialty", name: "SpineSurgery" },
+      "https://schema.org/Surgical",
+      "https://schema.org/Neurologic",
     ],
     description:
       "Neurocirurgião especialista em coluna vertebral, com 14 anos de experiência, fellowship UCL Londres e 5 publicações científicas.",
@@ -57,7 +57,10 @@ export function medicalBusinessJsonLd() {
     "@id": `${BASE_URL}/#consultorio`,
     name: "Dr. Deoclides — Neurocirurgião",
     url: BASE_URL,
-    medicalSpecialty: { "@type": "MedicalSpecialty", name: "Neurosurgery" },
+    medicalSpecialty: [
+      "https://schema.org/Surgical",
+      "https://schema.org/Neurologic",
+    ],
     address: {
       "@type": "PostalAddress",
       streetAddress: "Av. República do Líbano, 251, 12º andar",
