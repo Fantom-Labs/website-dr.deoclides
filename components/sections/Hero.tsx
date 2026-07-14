@@ -17,8 +17,8 @@ export default function Hero() {
       <Image
         src="/images/hero-mobile.png"
         alt="Dr. Deoclides, neurocirurgião especialista em coluna"
-        width={1800}
-        height={1596}
+        width={1430}
+        height={1672}
         priority
         quality={100}
         sizes="100vw"
