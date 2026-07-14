@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { MobileNav } from "@/components/ui/MobileNav";
+import { WHATSAPP_URL } from "@/lib/constants";
 
 const navLinks = [
   { href: "/", label: "Início" },
@@ -44,8 +45,10 @@ export default function Header() {
             ))}
           </nav>
 
-          <Link
-            href="/contato"
+          <a
+            href={WHATSAPP_URL}
+            target="_blank"
+            rel="noopener noreferrer"
             className="border-gold/30 text-ivory hidden items-center gap-3 rounded-xl border bg-[#032c58] px-6 py-4 font-sans text-base font-medium whitespace-nowrap backdrop-blur-md transition-colors hover:bg-[#032c58]/90 lg:inline-flex"
           >
             <Image
@@ -56,7 +59,7 @@ export default function Header() {
               className="size-6"
             />
             Agende sua Consulta
-          </Link>
+          </a>
 
           <MobileNav />
         </div>

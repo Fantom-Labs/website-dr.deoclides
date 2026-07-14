@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://drdeoclides.com.br"),
   title: {
     template: "%s · Dr. Deoclides",
-    default: "Dr. Deoclides - Neurocirurgião Especialista em Coluna | Recife",
+    default: "Dr. Deoclides | Neurocirurgião de Coluna em Recife",
   },
   description:
     "Dr. Deoclides, neurocirurgião especialista em coluna vertebral em Recife/PE. CRM PE 17015 · RQE 1548.",
@@ -39,6 +39,10 @@ export const metadata: Metadata = {
   robots: {
     index: true,
     follow: true,
+  },
+  alternates: {
+    canonical: "/",
+    languages: { "pt-BR": "/" },
   },
 };
 

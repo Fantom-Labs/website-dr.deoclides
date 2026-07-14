@@ -1,6 +1,6 @@
 import Image from "next/image";
-import Link from "next/link";
 import { Eyebrow } from "@/components/ui/Eyebrow";
+import { WHATSAPP_URL } from "@/lib/constants";
 
 const locations = [
   {
@@ -51,8 +51,10 @@ export default function Locations() {
               referência em Recife.
             </p>
 
-            <Link
-              href="/contato"
+            <a
+              href={WHATSAPP_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               className="border-gold/30 text-ivory mt-6 inline-flex w-fit items-center gap-3 rounded-xl border bg-[#032c58] px-6 py-4 font-sans text-base font-medium whitespace-nowrap backdrop-blur-md transition-colors hover:bg-[#032c58]/90"
             >
               <Image
@@ -63,7 +65,7 @@ export default function Locations() {
                 className="size-6"
               />
               Agende sua Consulta
-            </Link>
+            </a>
           </div>
         </div>
       </div>

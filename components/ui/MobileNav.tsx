@@ -2,6 +2,7 @@
 
 import * as Dialog from "@radix-ui/react-dialog";
 import Link from "next/link";
+import { WHATSAPP_URL } from "@/lib/constants";
 
 const navLinks = [
   { href: "/", label: "Início" },
@@ -82,12 +83,14 @@ export function MobileNav() {
 
           <div className="mt-auto">
             <Dialog.Close asChild>
-              <Link
-                href="/contato"
+              <a
+                href={WHATSAPP_URL}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="bg-gold text-navy-deep hover:bg-gold-soft block rounded px-4 py-3 text-center font-sans text-sm font-medium transition-colors"
               >
                 Agendar consulta
-              </Link>
+              </a>
             </Dialog.Close>
           </div>
         </Dialog.Content>

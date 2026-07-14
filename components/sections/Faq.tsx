@@ -1,6 +1,6 @@
 import Image from "next/image";
-import Link from "next/link";
 import { Accordion } from "@/components/ui/Accordion";
+import { WHATSAPP_URL } from "@/lib/constants";
 
 const faqItems = [
   {
@@ -56,8 +56,10 @@ export default function Faq() {
               suas dúvidas.
             </p>
 
-            <Link
-              href="/contato"
+            <a
+              href={WHATSAPP_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               className="border-gold/30 text-ivory mt-6 inline-flex w-fit items-center gap-3 rounded-xl border bg-[#032c58] p-5 font-sans text-base font-medium whitespace-nowrap backdrop-blur-md transition-colors hover:bg-[#032c58]/90"
             >
               <Image
@@ -68,7 +70,7 @@ export default function Faq() {
                 className="size-6"
               />
               Envie uma mensagem
-            </Link>
+            </a>
           </div>
         </div>
       </div>

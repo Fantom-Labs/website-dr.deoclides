@@ -1,4 +1,6 @@
 const BASE_URL = "https://drdeoclides.com.br";
+const WHATSAPP_NUMBER = "5581999823567";
+const INSTAGRAM_URL = "https://www.instagram.com/drdeoclides/";
 
 export function physicianJsonLd() {
   return {
@@ -18,8 +20,10 @@ export function physicianJsonLd() {
     description:
       "Neurocirurgião especialista em coluna vertebral, com 14 anos de experiência, fellowship UCL Londres e 5 publicações científicas.",
     url: BASE_URL,
+    telephone: `+${WHATSAPP_NUMBER}`,
     sameAs: [
       "https://www.doctoralia.com.br/deoclides-lima-bezerra-junior/neurocirurgiao/recife",
+      INSTAGRAM_URL,
     ],
     worksFor: [
       {

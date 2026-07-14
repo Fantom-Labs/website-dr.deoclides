@@ -11,6 +11,10 @@ export const metadata: Metadata = {
   title: { absolute: "Blog | Saúde da Coluna — Dr. Deoclides" },
   description:
     "Informação confiável sobre escoliose, hérnia de disco, dor na coluna e tratamentos, escrita por um neurocirurgião especialista.",
+  alternates: {
+    canonical: "/blog",
+    languages: { "pt-BR": "/blog" },
+  },
 };
 
 async function getPosts() {

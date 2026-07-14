@@ -1,4 +1,6 @@
+import Image from "next/image";
 import Link from "next/link";
+import { INSTAGRAM_URL, WHATSAPP_URL } from "@/lib/constants";
 
 const navLinks = [
   // { href: "/sobre", label: "Sobre" }, // rota desativada — ver next.config.ts
@@ -35,6 +37,35 @@ export default function Footer() {
                 {label}
               </Link>
             ))}
+          </nav>
+
+          <nav className="flex flex-col gap-3">
+            <span className="text-ivory/40 font-sans text-xs font-semibold tracking-widest uppercase">
+              Redes sociais
+            </span>
+            <a
+              href={INSTAGRAM_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-ivory/70 hover:text-ivory font-sans text-sm transition-colors"
+            >
+              Instagram
+            </a>
+          </nav>
+
+          <nav className="flex flex-col gap-3">
+            <span className="text-ivory/40 font-sans text-xs font-semibold tracking-widest uppercase">
+              Contato
+            </span>
+            <a
+              href={WHATSAPP_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-ivory/70 hover:text-ivory flex items-center gap-2 font-sans text-sm transition-colors"
+            >
+              <Image src="/zap.svg" alt="" width={16} height={16} className="size-4" />
+              +55 81 99982-3567
+            </a>
           </nav>
         </div>
 

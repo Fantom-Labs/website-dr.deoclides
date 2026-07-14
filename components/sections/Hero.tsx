@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Link from "next/link";
+import { WHATSAPP_URL } from "@/lib/constants";
 
 export default function Hero() {
   return (
@@ -34,8 +34,7 @@ export default function Hero() {
           </div>
 
           <h1 className="text-ivory font-poppins text-[32px] leading-tight font-normal lg:text-4xl">
-            Por trás de cada coluna existe uma história. A sua merece ser olhada
-            de forma única.
+            Por trás de cada coluna existe uma história única.
           </h1>
 
           <p className="text-ivory/80 mt-6 font-sans text-lg leading-relaxed">
@@ -45,8 +44,10 @@ export default function Hero() {
             correto é sempre o primeiro passo.
           </p>
 
-          <Link
-            href="/contato"
+          <a
+            href={WHATSAPP_URL}
+            target="_blank"
+            rel="noopener noreferrer"
             className="border-gold/30 text-ivory mt-8 inline-flex items-center gap-3 rounded-xl border bg-[#032c58] px-6 py-4 font-sans text-base font-medium whitespace-nowrap backdrop-blur-md transition-colors hover:bg-[#032c58]/90"
           >
             <Image
@@ -57,7 +58,7 @@ export default function Hero() {
               className="size-6"
             />
             Envie uma mensagem
-          </Link>
+          </a>
         </div>
       </div>
     </section>
