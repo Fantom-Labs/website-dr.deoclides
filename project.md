@@ -311,6 +311,7 @@ Consultório 30% · Bloco cirúrgico 30% · Preceptoria/educação (HR) 20% · S
 - [ ] Grau de explicitação de fé/valores cristãos no site → Dr. Deoclides (formulário)
 - [ ] Versão em inglês: lançamento ou fase futura? → Dr. Deoclides (formulário)
 - [ ] Números de autoridade (nº de cirurgias, residentes formados) → Dr. Deoclides (formulário)
+- [ ] **Divergência entre o Lattes e os dados confirmados (seção 12):** o Lattes/Escavador (coletado 11/07/2025, mas sem atualização desde ~2013) cita como orientadores/mentores Geraldo de Sá Carneiro, Hildo Rocha Azevedo-Filho e Ludvic Zrinzo (UCL) — não "Prof. Cavalli, Prof. Alexander Rosato" citados aqui. Também não há menção a treinamento na Alemanha; o fellowship internacional registrado é o de Londres (UCL), em neurocirurgia funcional/DBS para Parkinson, não coluna. Graduação em Medicina consta 2001–2006 (UFAL), o que não bate com "formado 2012". A página `/academico` foi construída usando os dados do Lattes. → confirmar com Dr. Deoclides qual versão está correta
 - [ ] Depoimentos e material fotográfico existente: onde estão → Dr. Deoclides (formulário)
 
 ---
