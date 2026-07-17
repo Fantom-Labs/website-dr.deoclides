@@ -42,16 +42,18 @@ Componentes: design system "O Eixo" custom + Radix pontual (Dialog no menu mobil
 
 ## Arquitetura de páginas
 
-| Página         | Conteúdo                                                                                       |
-| -------------- | ---------------------------------------------------------------------------------------------- |
-| Home           | Hero → autoridade → confiança → especialidades → abordagem → sobre → prova social → fechamento |
-| Sobre          | Trajetória, formação, mentores, filosofia                                                      |
-| Especialidades | Página única com seções por procedimento                                                       |
-| Acadêmico      | Publicações, congressos, ensino/preceptoria                                                    |
-| Blog           | Listagem + post + categorias (Sanity CMS)                                                      |
-| Contato        | Formulário + WhatsApp + endereços + mapa + convênios                                           |
+| Página         | Conteúdo                                                                                                     | Status                                    |
+| -------------- | -------------------------------------------------------------------------------------------------------------- | ------------------------------------------ |
+| Home           | Hero → sobre (resumo) → especialidades → abordagem → convênios → FAQ → prova social → locais de atendimento    | ✅ implementada                            |
+| Sobre          | Trajetória, formação, mentores, filosofia                                                                       | ⏸️ desativada — `/sobre` redireciona para a Home (o resumo já cobre o conteúdo); reativar em `next.config.ts` |
+| Especialidades | Página única com seções por procedimento                                                                        | ✅ implementada                            |
+| Acadêmico      | Publicações, congressos, ensino/preceptoria                                                                     | ✅ implementada                            |
+| Blog           | Listagem + post + categorias (Sanity CMS)                                                                       | ✅ implementada                            |
+| Contato        | Formulário + WhatsApp + endereços + mapa + convênios                                                            | 🚧 placeholder — formulário (React Hook Form + Zod → Resend) ainda não implementado |
 
-CTA primário do site: **WhatsApp** (formulário de contato é secundário).
+CTA primário do site: **WhatsApp** (formulário de contato é secundário, ainda pendente).
+
+Há também `/ds`, uma página interna de referência do design system (componentes de UI), e `/studio`, o Sanity Studio embarcado.
 
 ## Setup
 
@@ -62,6 +64,20 @@ npm run dev
 ```
 
 Abrir [http://localhost:3000](http://localhost:3000).
+
+Preencher `.env.local` com as chaves do Sanity, Resend, Cloudflare Turnstile e analytics — ver [`.env.example`](./.env.example) para a lista completa.
+
+### Scripts
+
+| Comando               | Descrição                                             |
+| ---------------------- | ------------------------------------------------------ |
+| `npm run dev`          | Servidor de desenvolvimento (Turbopack)                |
+| `npm run build`        | Build de produção                                       |
+| `npm run lint`         | ESLint                                                  |
+| `npm run format`       | Prettier (write)                                        |
+| `npm run format:check` | Prettier (check)                                        |
+| `npm run typegen`      | Extrai schema do Sanity e gera tipos GROQ (`sanity.types.ts`) |
+| `npm run lhci`         | Lighthouse CI (budgets de performance)                  |
 
 ## Deploy
 
