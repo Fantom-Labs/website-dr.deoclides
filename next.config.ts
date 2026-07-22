@@ -15,6 +15,12 @@ const nextConfig: NextConfig = {
         destination: "/",
         permanent: false,
       },
+      // Placeholder sem conteúdo (GTM reportou "Sem tag") — remover esta entrada reativa a rota /contato.
+      {
+        source: "/contato",
+        destination: "/",
+        permanent: false,
+      },
     ];
   },
 };
