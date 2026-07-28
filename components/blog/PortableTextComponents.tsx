@@ -26,6 +26,30 @@ export const portableTextComponents: BodyComponents = {
       </blockquote>
     ),
   },
+  list: {
+    bullet: ({ children }) => (
+      <ul className="marker:text-gold list-disc space-y-2 pl-6">
+        {children}
+      </ul>
+    ),
+    number: ({ children }) => (
+      <ol className="marker:text-gold list-decimal space-y-2 pl-6">
+        {children}
+      </ol>
+    ),
+  },
+  listItem: {
+    bullet: ({ children }) => (
+      <li className="text-ink font-sans text-lg leading-relaxed">
+        {children}
+      </li>
+    ),
+    number: ({ children }) => (
+      <li className="text-ink font-sans text-lg leading-relaxed">
+        {children}
+      </li>
+    ),
+  },
   marks: {
     link: ({ value, children }) => {
       const href = value?.href ?? "";
