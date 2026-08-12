@@ -64,7 +64,7 @@ export default function Footer() {
               className="text-ivory/70 hover:text-ivory flex items-center gap-2 font-sans text-sm transition-colors"
             >
               <Image src="/zap.svg" alt="" width={16} height={16} className="size-4" />
-              +55 81 99982-3567
+              +55 81 98481-5063
             </a>
           </nav>
         </div>

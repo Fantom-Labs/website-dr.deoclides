@@ -1,5 +1,5 @@
 const BASE_URL = "https://drdeoclides.com.br";
-const WHATSAPP_NUMBER = "5581999823567";
+const WHATSAPP_NUMBER = "5581984815063";
 const INSTAGRAM_URL = "https://www.instagram.com/drdeoclides/";
 
 export function physicianJsonLd() {
